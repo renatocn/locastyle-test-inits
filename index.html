@@ -218,6 +218,7 @@
         function callInits() {
           var timesCalled = $("#inits_called").text();
           $("#inits_called").text(parseInt(timesCalled) + 1)
+          locastyle.popover.destroy();
           locastyle.dropdown.init();
           locastyle.popover.init();
           locastyle.modal.init();
